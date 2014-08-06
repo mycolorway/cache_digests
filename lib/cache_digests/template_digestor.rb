@@ -29,7 +29,7 @@ module CacheDigests
         logger.try :debug, "Cache digest for #{name}.#{format}: #{digest}"
       end
     rescue ActionView::MissingTemplate
-      logger.try :error, "Couldn't find template for digesting: #{name}.#{format}"
+      # logger.try :error, "Couldn't find template for digesting: #{name}.#{format}"
       ''
     end
 
